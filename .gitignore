@@ -22,3 +22,6 @@ data-from-aot-footages/
 whole-car-test-dataset/
 stable_No_province
 
+#unnecessary files
+output/
+
