@@ -1,0 +1,164 @@
+[
+  {
+    "image": "//Users/woramatesimrum/work/lpr_pvs/cctv/a1.2_x1.jpeg",
+    "H": 720,
+    "W": 1280,
+    "overlay": "/Users/woramatesimrum/work/lpr_pvs/output/overlays/a1.2_x1_overlay.jpg",
+    "plates": [
+      {
+        "plate_index": 1,
+        "plate_conf": 0.963605523109436,
+        "plate_box_xyxy": [
+          552,
+          358,
+          656,
+          438
+        ],
+        "plate_crop_path": "/Users/woramatesimrum/work/lpr_pvs/output/crops/a1.2_x1/plate_01_conf_0.964.jpg",
+        "stage2_ok": true,
+        "stage2_reason": "ok",
+        "raw": "5กบ5623 ทรนทพนหนกร",
+        "cleaned": "5กบ5623 ทรนทพนหนกร",
+        "line1": "5กบ",
+        "line2": "5623",
+        "province": "",
+        "province_score": 0.6,
+        "prov_candidate_conf": 0.034226159617361855,
+        "prov_candidate_tag": "fallback_from_plate_ocr",
+        "prov_candidate_text": "กบ ทรนทพนหนกร",
+        "debug_info": {}
+      }
+    ]
+  },
+  {
+    "image": "//Users/woramatesimrum/work/lpr_pvs/cctv/a1_x1.8.jpeg",
+    "H": 720,
+    "W": 1280,
+    "overlay": "/Users/woramatesimrum/work/lpr_pvs/output/overlays/a1_x1.8_overlay.jpg",
+    "plates": [
+      {
+        "plate_index": 1,
+        "plate_conf": 0.9059880971908569,
+        "plate_box_xyxy": [
+          486,
+          366,
+          665,
+          499
+        ],
+        "plate_crop_path": "/Users/woramatesimrum/work/lpr_pvs/output/crops/a1_x1.8/plate_01_conf_0.906.jpg",
+        "stage2_ok": true,
+        "stage2_reason": "ok",
+        "raw": "5กบ5623 กรงทพมหวนคร",
+        "cleaned": "5กบ5623 กรงทพมหวนคร",
+        "line1": "5กบ",
+        "line2": "5623",
+        "province": "กรุงเทพมหานคร",
+        "province_score": 0.7559130204046756,
+        "prov_candidate_conf": 0.391826040809351,
+        "prov_candidate_tag": "adapt",
+        "prov_candidate_text": "อ กรงทฯบหบคร",
+        "debug_info": {}
+      }
+    ]
+  },
+  {
+    "image": "//Users/woramatesimrum/work/lpr_pvs/cctv/a1_x1.jpeg",
+    "H": 720,
+    "W": 1280,
+    "overlay": "/Users/woramatesimrum/work/lpr_pvs/output/overlays/a1_x1_overlay.jpg",
+    "plates": [
+      {
+        "plate_index": 1,
+        "plate_conf": 0.9393487572669983,
+        "plate_box_xyxy": [
+          552,
+          321,
+          656,
+          397
+        ],
+        "plate_crop_path": "/Users/woramatesimrum/work/lpr_pvs/output/crops/a1_x1/plate_01_conf_0.939.jpg",
+        "stage2_ok": true,
+        "stage2_reason": "ok",
+        "raw": "5กบ 5623 กรทมหอบกร",
+        "cleaned": "5กบ 5623 กรทมหอบกร",
+        "line1": "5กบ",
+        "line2": "5623",
+        "province": "",
+        "province_score": 0.631578947368421,
+        "prov_candidate_conf": 0.1001514149962453,
+        "prov_candidate_tag": "fallback_from_plate_ocr",
+        "prov_candidate_text": "กรทมหอบกร",
+        "debug_info": {}
+      }
+    ]
+  },
+  {
+    "image": "//Users/woramatesimrum/work/lpr_pvs/cctv/a2_x1.5.jpeg",
+    "H": 720,
+    "W": 1280,
+    "overlay": "/Users/woramatesimrum/work/lpr_pvs/output/overlays/a2_x1.5_overlay.jpg",
+    "plates": [
+      {
+        "plate_index": 1,
+        "plate_conf": 0.9249452948570251,
+        "plate_box_xyxy": [
+          484,
+          300,
+          667,
+          429
+        ],
+        "plate_crop_path": "/Users/woramatesimrum/work/lpr_pvs/output/crops/a2_x1.5/plate_01_conf_0.925.jpg",
+        "stage2_ok": true,
+        "stage2_reason": "ok",
+        "raw": "5กบ 5623 กรงทพมหวนคร",
+        "cleaned": "5กบ 5623 กรงทพมหวนคร",
+        "line1": "5กบ",
+        "line2": "5623",
+        "province": "กรุงเทพมหานคร",
+        "province_score": 0.7980442591970218,
+        "prov_candidate_conf": 0.20478417056795675,
+        "prov_candidate_tag": "gray",
+        "prov_candidate_text": "กรงทพมทนกร",
+        "debug_info": {}
+      }
+    ]
+  },
+  {
+    "image": "//Users/woramatesimrum/work/lpr_pvs/cctv/a2_x1.8.jpeg",
+    "H": 720,
+    "W": 1280,
+    "overlay": "/Users/woramatesimrum/work/lpr_pvs/output/overlays/a2_x1.8_overlay.jpg",
+    "plates": [
+      {
+        "plate_index": 1,
+        "plate_conf": 0.9491900205612183,
+        "plate_box_xyxy": [
+          878,
+          350,
+          1007,
+          453
+        ],
+        "plate_crop_path": "/Users/woramatesimrum/work/lpr_pvs/output/crops/a2_x1.8/plate_01_conf_0.949.jpg",
+        "stage2_ok": true,
+        "stage2_reason": "ok",
+        "raw": "5กบ 5623 กรรทรมหบกร",
+        "cleaned": "5กบ 5623 กรรทรมหบกร",
+        "line1": "5กบ",
+        "line2": "5623",
+        "province": "",
+        "province_score": 0.6,
+        "prov_candidate_conf": 0.0416163963617443,
+        "prov_candidate_tag": "fallback_from_plate_ocr",
+        "prov_candidate_text": "กรรทรมหบกร",
+        "debug_info": {}
+      }
+    ]
+  },
+  {
+    "image": "//Users/woramatesimrum/work/lpr_pvs/cctv/a2_x1.jpeg",
+    "H": 720,
+    "W": 1280,
+    "overlay": "/Users/woramatesimrum/work/lpr_pvs/output/overlays/a2_x1_overlay.jpg",
+    "plates": []
+  }
+]

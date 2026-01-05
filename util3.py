@@ -136,11 +136,14 @@ def _try_warp_plate_border(plate_bgr, debug_dir=None):
     warped = cv2.warpPerspective(plate_bgr, M, (maxWidth, maxHeight))
 
     if debug_dir:
-    # This is correct for full warped plate
+        # Save full warped image
         cv2.imwrite(os.path.join(debug_dir, "00_plate_crop_warped.jpg"), warped)
 
-        # ✅ Add this for bottom fallback
+        # Create and save bottom crop fallback
+        h, w = warped.shape[:2]
+        crop_from_warped = warped[int(h * 0.75):h, :]
         cv2.imwrite(os.path.join(debug_dir, "zz_warped.jpg"), crop_from_warped)
+
 
     return warped, M, rect
 
