@@ -1,5 +1,3 @@
-# infer_v4_CLEAN.py
-#!/usr/bin/env python3
 import traceback, os, json, argparse
 from pathlib import Path
 import cv2
