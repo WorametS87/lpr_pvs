@@ -1,0 +1,25 @@
+# Python
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# Models
+*.pt
+weight/
+
+# Video / media
+*.mp4
+*.mov
+*.avi
+*.jpg
+*.png
+*.jpeg
+
+# Datasets
+cctv/
+vid/
+data-from-aot-footages/
+whole-car-test-dataset/
+stable_No_province
+
