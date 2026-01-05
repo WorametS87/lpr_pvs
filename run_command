@@ -1,109 +1,34 @@
-##stage 1
-python3 infer_v4.py \
-  --input "/Users/woramatesimrum/work/lpr/4thGen(2stages)/whole-car-test-dataset/test/images" \
-  --out   "/Users/woramatesimrum/work/lpr/4thGen_out" \
-  --stage1 "/Users/woramatesimrum/work/lpr/1stGen/runs/detect/th_test_lpv5(detect_plate)2/weights/best.pt" \
-  --conf1 0.15 \
-  --iou1 0.60 \
-  --pad 0.12
 
-
-
-
-
-##satge 1 and 2
-python3 infer_v4.py \
-  --input "/Users/woramatesimrum/work/lpr/4thGen(2stages)/whole-car-test-dataset/test/images" \
-  --out   "/Users/woramatesimrum/work/lpr/4thGen_out" \
-  --stage1 "/Users/woramatesimrum/work/lpr/1stGen/runs/detect/th_test_lpv5(detect_plate)2/weights/best.pt" \
-  --stage2 "/Users/woramatesimrum/work/lpr/3rdGen/th_test_lpv4/weights/best.pt" \
-  --pad 0.15 \
-  --run-stage2
-
-python3 infer_v4.py \
-  --input "//Users/woramatesimrum/work/lpr/4thGen(2stages)/ถ่ายเอง" \
-  --out   "/Users/woramatesimrum/work/lpr/4thGen_out" \
-  --stage1 "/Users/woramatesimrum/work/lpr/1stGen/runs/detect/th_test_lpv5(detect_plate)2/weights/best.pt" \
-  --stage2 "/Users/woramatesimrum/work/lpr/3rdGen/th_test_lpv4/weights/best.pt" \
-  --conf1 0.15 \
-  --iou1 0.60 \
-  --pad 0.12 \
-  --run-stage2
-
-  python3 infer_v4.py \
-  --input "/Users/woramatesimrum/work/lpr/4thGen(2stages)/cctv" \
-  --out   "/Users/woramatesimrum/work/lpr/4thGen_out" \
-  --stage1 "/Users/woramatesimrum/work/lpr/1stGen/runs/detect/th_test_lpv5(detect_plate)2/weights/best.pt" \
-  --stage2 "/Users/woramatesimrum/work/lpr/3rdGen/th_test_lpv4/weights/best.pt" \
-  --run-stage2 \
-  --imgsz1 1536 \
-  --conf1  0.1 \
-  --iou1   0.5 \
-  --maxdet1 80 \
-  --pad 0.15 \
-  --debugr "/Users/woramatesimrum/work/lpr/4thGen_out/debug_stage2" -di
-
-  python3 infer_v4.py \
-  --input "//Users/woramatesimrum/work/lpr/4thGen(2stages)/ถ่ายเอง/iapp" \
-  --out   "/Users/woramatesimrum/work/lpr/4thGen_out" \
-  --stage1 "/Users/woramatesimrum/work/lpr/1stGen/runs/detect/th_test_lpv5(detect_plate)2/weights/best.pt" \
-  --stage2 "/Users/woramatesimrum/work/lpr/3rdGen/th_test_lpv4/weights/best.pt" \
-  --conf1 0.15 \
-  --iou1 0.60 \
-  --pad 0.12 \
-  --run-stage2
 
 
 
 #cropping plates from video
-python3 crop_plate_vids.py \
-  --video "/Users/woramatesimrum/work/lpr/4thGen(2stages)/vid/event_detection_uc2_camera_2.mp4" \
-  --stage1 "/Users/woramatesimrum/work/lpr/1stGen/runs/detect/th_test_lpv5(detect_plate)2/weights/best.pt" \
-  --out "/Users/woramatesimrum/work/lpr/4thGen(2stages)/vid/cropped" \
-  --imgsz1 1280 \
-  --conf1 0.25 \
-  --iou1 0.5 \
-  --pad 0.10 \
-  --every 2 \
-  --save-overlay
+#python3 crop_plate_vids.py \
+#  --video "/Users/woramatesimrum/work/lpr/4thGen(2stages)/vid/event_detection_uc2_camera_2.mp4" \
+#  --stage1 "/Users/woramatesimrum/work/lpr/1stGen/runs/detect/th_test_lpv5(detect_plate)2/weights/best.pt" \
+#  --out "/Users/woramatesimrum/work/lpr/4thGen(2stages)/vid/cropped" \
+#  --imgsz1 1280 \
+#  --conf1 0.25 \
+# --iou1 0.5 \
+#  --pad 0.10 \
+#  --every 2 \
+#  --save-overlay
 
 #Running Stable
 python3 infer_v4.py \
-  --input "/Users/woramatesimrum/work/lpr/4thGen_2stages/cctv" \
-  --out "/Users/woramatesimrum/work/lpr/4thGen_2stages/output" \
-  --stage1 "/Users/woramatesimrum/work/lpr/4thGen_2stages/weight/detect_plate.pt" \
-  --stage2 "/Users/woramatesimrum/work/lpr/4thGen_2stages/weight/readplate.pt" \
+  --input "//Users/woramatesimrum/work/lpr_pvs/cctv" \
+  --out "/Users/woramatesimrum/work/lpr_pvs/output" \
+  --stage1 "/Users/woramatesimrum/work/lpr_pvs/weight/detect_plate.pt" \
+  --stage2 "/Users/woramatesimrum/work/lpr_pvs/weight/readplate.pt" \
   --run-stage2 \
   --imgsz1 1536 \
   --conf1  0.1 \
   --iou1   0.5 \
   --maxdet1 80 \
   --pad 0.15 \
-  --debug-dir "/Users/woramatesimrum/work/lpr/4thGen_2stages/output/debug"
+  --debug-dir "/Users/woramatesimrum/work/lpr_pvs/output/debug"
 
 
 
-python3 infer_v4.py \
-  --input "/Users/woramatesimrum/work/lpr/4thGen(2stages)/cctv" \
-  --out "/Users/woramatesimrum/work/lpr/4thGen(2stages)/stable_No_province/output" \
-  --stage1 "/Users/woramatesimrum/work/lpr/1stGen/runs/detect/th_test_lpv5(detect_plate)2/weights/best.pt" \
-  --stage2 "/Users/woramatesimrum/work/lpr/3rdGen/th_test_lpv4/weights/best.pt" \
-  --run-stage2 \
-  --s2_enhance \
-  --s2_box_pad 0.15 \
-  --s2_char_upscale 4.0 \
-  --s2_split_digit_line \
-  --s2_force_one_char \
-  --debug
 
-#no stage2
-python3 infer_v4.py \
-  --input "/path/to/images_or_folder" \
-  --out "4thGen_out" \
-  --stage1 "/path/to/plate_detector.pt" \
-  --imgsz1 1600 \
-  --conf1 0.18 \
-  --iou1 0.50 \
-  --maxdet1 80 \
-  --pad 0.14
 
