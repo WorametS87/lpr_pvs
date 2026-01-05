@@ -5,8 +5,7 @@ __pycache__/
 *.pyc
 
 # Models
-*.pt
-weight/
+
 
 # Video / media
 *.mp4
