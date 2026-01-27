@@ -15,18 +15,7 @@
 #  --save-overlay
 
 #Running Stable
-python3 infer_v4.py \
-  --input "//Users/woramatesimrum/work/lpr_pvs/cctv" \
-  --out "/Users/woramatesimrum/work/lpr_pvs/output" \
-  --stage1 "/Users/woramatesimrum/work/lpr_pvs/weight/detect_plate.pt" \
-  --stage2 "/Users/woramatesimrum/work/lpr_pvs/weight/readplate.pt" \
-  --run-stage2 \
-  --imgsz1 1536 \
-  --conf1  0.1 \
-  --iou1   0.5 \
-  --maxdet1 80 \
-  --pad 0.15 \
-  --debug-dir "/Users/woramatesimrum/work/lpr_pvs/output/debug"
+python3 infer_v4.py --input "/Users/woramatesimrum/work/lpr_pvs/test" --out "/Users/woramatesimrum/work/lpr_pvs/output" --stage1 "/Users/woramatesimrum/work/lpr_pvs/weight/detect_plate.pt" --stage2 "/Users/woramatesimrum/work/lpr_pvs/weight/readplate.pt" --run-stage2 --imgsz1 1536 --conf1 0.1 --iou1 0.5 --maxdet1 80 --pad 0.15 --debug-dir "/Users/woramatesimrum/work/lpr_pvs/output/debug"
 
 
 
